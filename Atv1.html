@@ -2,24 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-
-        <style>
-            body{
-                text-align: center;
-                background-color: azure;
-            }
-            footer{
-                text-align: left;
-            }
-            p{
-                text-align: left;
-            }
-            .centro{
-                text-align: center;
-            }
-        </style>
 
         <header>
             <h1 style="text-align: center;"> Chevrolet Opala </h1>
@@ -183,9 +168,116 @@
             <ol type="a">
                 <P> Motorizações </P>
                 <li> Quatro cilindros </li>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th> Motor </th>
+                                <th> quatro cilindros </th>
+                                <th> Potência líquida </th>
+                                <th> Torque </th>
+                                <th> Fabricação </th>
+                                <th> Combustível </th>
+                                <th> Carburador </th>
+                            </tr>
+                        </thead>
+        
+                        <tbody>
+                            <tr>
+                                <td> 153 </td>
+                                <td>  2.5L </td>
+                                <td> 80 cv a 3800 RPM </td>
+                                <td> 18 kgfm a 2600 RPM </td>
+                                <td> 1968-73 </td> 
+                                <td> Gasolina </td>
+                                <td> 228 </td>  
+                            </tr>
+        
+                            <tr>
+                                <td> 151-S </td>
+                                <td> 2.5L </td>
+                                <td> 98 cv a 4800 RPM </td>
+                                <td> 19,8 kgfm a 2800 RPM </td>
+                                <td> 1971–80 </td> 
+                                <td> Gasolina </td> 
+                                <td> Weber 446 </td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+
                 <li> Seis cilindros </li>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th> Motor </th>
+                            <th> Descrição </th>
+                            <th> Método de medição da potência </th>
+                            <th> Potência </th>
+                            <th> Torque </th>
+                            <th> Fabricação </th>
+                            <th> Combustível </th>
+                            <th> Carburador </th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td> 230 - 3.8 </td>
+                            <td> 3.8L  </td>
+                            <td> SAE (bruta) </td>
+                            <td> 125 cv a 4000 RPM </td>
+                            <td> 26,2 a 2400 RPM </td> 
+                            <td> 1968–71 </td>
+                            <td> Gasolina </td>  
+                            <td> - </td>
+                        </tr>
+    
+                        <tr>
+                            <td> 250 - (kit Envemo opcional) - 4.1 </td>
+                            <td> 4.1L </td>
+                            <td> SAE (bruta) </td>
+                            <td> 205 cv a 5500 RPM </td>
+                            <td> 34 kgfm a 5500 RPM </td> 
+                            <td> 1971–75 </td> 
+                            <td> Gasolina </td> 
+                            <td> 3 DFV 446 </td>
+                        </tr>
+                    </tbody>
+                </table>
             </ol>
+
+            <div class="centro"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Chevrolet_Opala_250-S_engine.jpg/1280px-Chevrolet_Opala_250-S_engine.jpg" alt="Opala" height="300px" width="500px"></div>
             
+            <form>
+                <br> <br>
+                <label for="usuario"> Usuario </label>
+                <input type="text" name="usuario" placeholder="usuario">
+                <br><br>
+                <label for="Carros"> Carros </label>
+                <br>
+                <input type="radio" name="carro" value="carro">
+                <label for="Standard-Especial"> Standard / Especial </label>
+                <br>
+                <input type="radio" name="carro" value="carro">
+                <label for="Luxo"> Luxo </label>
+                <br>
+                <input type="radio" name="carro" value="carro">
+                <label for="Gran-Luxo"> Gran Luxo </label>
+                <br>
+                <input type="radio" name="carro" value="carro">
+                <label for="Opala-SS"> Opala SS </label>
+                <br>
+                <input type="radio" name="carro" value="carro">
+                <label for="Caravan"> Caravan </label>
+                <br>
+                <input type="radio" name="carro" value="carro">
+                <label for="Comodoro"> Comodoro </label>
+                <br> 
+                <input type="radio" name="carro" value="carro"> 
+                <label for="Diplomata"> Diplomata </label>
+                <br>
+                <button type="submit"> Enviar </button>
+            </form>
         </footer>
 
     </body>
