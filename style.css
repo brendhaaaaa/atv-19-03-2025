@@ -5,13 +5,45 @@ body{
     font-family: arial;
     background-color: #f8f8f8;
     color: #333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
 header{
     background-color: #2c3e50;
-    color: white;
+    color: rgb(224, 222, 222);
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
+
+ header img{
+    width: 40px;
+    position: absolute;
+    left: 110px;
+    top: 35px;
+ }
 
 table{
     width: 100%;
@@ -32,29 +64,40 @@ th{
 }
 
 td{
-    background-color: #d6d9db;
+    background-color: #c1c3c4;
 }
 
 tr:nth-child(even) td{
-    background-color: #BDC3C7;
+    background-color: #a8aaac;
 }
 
 form{
-    background-color: #fff;
+    background-color: #ebeaea;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     margin-top: 30px;
+    width: 40%;
+}
+
+footer{
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 form label{
     font-size: 1,1em;
     color: #2C3E50;
     margin: 10px;
-    display: block;
+    display: inline-block;
 }
+
 form input[type="text"]{
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 20px;
     border: 2px solid #2C3E50;
@@ -92,13 +135,10 @@ form button:hover{
     border-radius: 8px;
 }
 
-footer{
-    background-color: #2C3E50;
-    color: white;
-    padding: 20px;
-    margin-top: 50px;
-}
-
 footer p{
     font-size: 1,2em;
+}
+
+.conteudo{
+    width: 800px;
 }
