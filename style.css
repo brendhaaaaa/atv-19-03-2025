@@ -9,25 +9,63 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    cursor: default;
 }
 
-.menu{
+.opala-aberto{
+    max-height: 250px !important;
+}
+
+.img-opala-foda{
+    position: absolute;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.8s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.img-opala-foda img{
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.menuOpen{
+    padding: 2%;
+    max-height: 400px !important;
+}
+
+.menu:hover{
+    display: block;
+}
+
+.menu {
+    max-height: 0;
+    text-wrap: wrap;
+    transition: all 0.5s ease;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #2c3e50;
-    padding: 10px 20px;
-}
-
-.menu a{
+    top: 7.9%;
+    left: 5%;
+    background: #2c3e50;
     color: white;
-    text-decoration: none;
-    margin-right: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    overflow: hidden;
 }
 
-.menu a:hover{
-    text-decoration: underline;
+.menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    margin: 5% 0;
+    font-size: 1.2em;
+}
+
+.menu a:hover {
+    color: #0c0c0c;
 }
 
 header{
@@ -43,6 +81,10 @@ header{
     position: absolute;
     left: 110px;
     top: 35px;
+ }
+
+ header img:hover{
+    cursor: pointer;
  }
 
 table{
@@ -110,6 +152,10 @@ form input[type="radio"]{
     margin-right: 10px;
 }
 
+form input:hover{
+    cursor: pointer;
+}
+
 form button{
     background-color: #E67E22;
     color: white;
@@ -141,4 +187,8 @@ footer p{
 
 .conteudo{
     width: 800px;
+}
+
+li h4:hover{
+    cursor: pointer;
 }
